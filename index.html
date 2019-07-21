@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700&display=swap" rel="stylesheet">
+    <embed src="Alan Walker - On My Way (Lyrics) ft. Sabrina Carpenter & Farruko [PUBG edition].mp3" autostart="true" loop="true" height="0" width="0" autobuffer>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,13 +15,17 @@
     <div id="game">
         <h1>Guess the number</h1>
         <p>choose level</p>
-        <button id="easy" onclick="playEasy()">Easy</button>
-        <button onclick="playMedium()">Medium</button>
-        <button onclick="playHard()">Hard</button>
-        <input type="text">
-        <button id="guess" onclick="guessIt()">Guess</button>
+        <div>
+            <button id="easy" onclick="playEasy()">Easy</button>
+            <button onclick="playMedium()">Medium</button>
+            <button onclick="playHard()">Hard</button>
+        </div>
+        <div>
+            <input type="number" placeholder="Enter Number">
+            <button id="guess" onclick="guessIt()">Guess</button>
+        </div>
     </div>
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>

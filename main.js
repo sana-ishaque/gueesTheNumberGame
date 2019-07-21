@@ -13,14 +13,15 @@ function playHard() {
     document.querySelector('input').style.visibility = "visible";
     document.querySelector('#guess').style.visibility = "visible";
 }
-function guessIt(){
+function guessIt() {
+    let randomNumber = Math.floor(Math.random()*10);
     let number = parseInt(document.querySelector('input').value);
-    if (number < 8) {
+    if (number < randomNumber) {
         alert("this numb is low");
-    } else if (number > 8) {
+    } else if (number > randomNumber) {
         alert("this numb is high");
-    } else if(number === 8){
-        alert("congo");
+    } else if (number === randomNumber) {
+        alert("Bingoo !!!");
     }
-
+    document.querySelector('input').value = "";
 }

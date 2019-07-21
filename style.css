@@ -1,5 +1,8 @@
+*{
+    font-family: 'Cinzel', serif;
+}
 body {
-    background-image: url(sebastiaan-stam-5hBREM-5mnQ-unsplash.jpg);
+    background-image: url(img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13,16 +16,18 @@ body {
 }
 
 #game {
-    background-color: #212223b3;
+    /* background-color: #212223b3; */
     height: 400px;
     padding: 30px;
-    box-shadow: 1px 1px 3px darkgrey;
+    /* box-shadow: 1px 1px 3px darkgrey; */
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 p {
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 button {
@@ -33,7 +38,6 @@ button {
     outline-offset: 0px;
     text-shadow: none;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    display: block;
     transition-property: all;
     transition-duration: .6s;
     transition-timing-function: ease;
@@ -46,7 +50,7 @@ button {
     text-decoration: none;
     width: 100%;
     background-color: transparent;
-    margin: 25px auto 25px auto;
+    margin: 0 20px;
 }
 
 button:hover {
@@ -60,3 +64,29 @@ button:hover {
 /* input, #guess {
     visibility: hidden;
 } */
+
+input {
+    display: block;
+    text-align: center;
+    margin: auto;
+    border: 0.5px solid #8b8c8c;
+    background-color: transparent;
+    line-height: 30px;
+    color: #8b8c8c;
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 160px;
+    margin: 20px auto;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+h1{
+    margin-top: 80px;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 28px;
+}
