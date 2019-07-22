@@ -1,6 +1,7 @@
-*{
+* {
     font-family: 'Cinzel', serif;
 }
+
 body {
     background-image: url(img.jpg);
     background-repeat: no-repeat;
@@ -26,10 +27,12 @@ body {
 }
 
 p {
-    font-size: 15px;
+    font-size: 22px;
     text-transform: uppercase;
 }
-
+#btn{
+    margin: 30px auto 40px auto;
+}
 button {
     border: 0 solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
@@ -53,10 +56,38 @@ button {
     margin: 0 20px;
 }
 
-button:hover {
+#guess:hover {
     border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    box-shadow: inset 0 0 20px #427388, 0 0 20px #427388;
     outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 5px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+#guess-number {
+    margin-top: 40px;
+}
+
+#easy:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #00BCD4, 0 0 20px #00BCD4;
+    outline-color: #00BCD4;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+#medium:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #FFEB3B, 0 0 20px #FFEB3B;
+    outline-color: #FFEB3B;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+#hard:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #F44336, 0 0 20px #F44336;
+    outline-color: #F44336;
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 }
@@ -78,15 +109,23 @@ input {
     max-width: 160px;
     margin: 20px auto;
 }
+
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
-h1{
+
+h1 {
     margin-top: 80px;
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-bottom: 18px;
 }
-p{
-    font-size: 28px;
+
+@media (max-width:700px){
+    #btn button{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
 }
